@@ -203,11 +203,11 @@ export default {
           value: {
             [parameter0name]: {
               type: parameter0type,
-              value: convertValue(parameter0, parameter0type),
+              value: this.convertValue(parameter0, parameter0type),
             },
             [parameter1name]: {
               type: parameter1type,
-              value: convertValue(parameter1, parameter1type),
+              value: this.convertValue(parameter1, parameter1type),
             },
           },
         },

@@ -22,6 +22,9 @@ export default {
   methods: {
     async handlerGetBlockNumber() {
       const web3 = new Web3(Web3.givenProvider);
+
+      // const web3 = new Web3(window.onto);
+      
       try {
         const blockNumber = await web3.eth.getBlockNumber();
         console.log("blockNumber", blockNumber);

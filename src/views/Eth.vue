@@ -105,6 +105,9 @@ export default {
     },
     async handlerInitETH() {
       const web3 = new Web3(Web3.givenProvider);
+      
+    //   const web3 = new Web3(window.onto);
+
       console.log("global:", web3);
       const accounts = await web3.eth.requestAccounts();
       console.log("accounts", accounts);
