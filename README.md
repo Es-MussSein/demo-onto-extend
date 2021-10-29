@@ -1,7 +1,7 @@
 # demo-onto-extend
 
 ## Project setup
-```
+```node v15.10.0
 npm install
 ```
 

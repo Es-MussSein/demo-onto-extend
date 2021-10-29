@@ -14,13 +14,20 @@
     <ONTProvider :providers="resultData.providers" />
     <el-tabs type="border-card" @tab-click="handleClick">
       <el-tab-pane>
-        <span slot="label">invoke</span>
-        <ONTInvoke />
+        <router-link slot="label" to="/ont" class="router-to">
+          invoke
+          <!-- <ONTInvoke /> -->
+        </router-link>
       </el-tab-pane>
+
       <el-tab-pane>
-        <span slot="label">invokeWasm</span>
-        <ONTInvokeWasm />
+        <router-link slot="label" to="/ont/InvokeWasm" class="router-to">
+         invokeWasm
+          <!-- <ONTInvokeWasm /> -->
+        </router-link>
       </el-tab-pane>
+
+      <router-view />
     </el-tabs>
   </div>
 </template>
@@ -88,6 +95,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.router-to {
+  margin: 0 auto;
+  color:#000;
+  text-decoration: none;
+}
 .g-content {
   margin: 0 auto;
   max-width: 1280px;

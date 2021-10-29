@@ -72,6 +72,7 @@
 import { client, provider } from "@ont-dev/ontology-dapi";
 
 export default {
+  name:'InvokeWasm',
   props: {
     resultData: {
       require: true,
